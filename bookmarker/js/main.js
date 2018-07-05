@@ -50,8 +50,9 @@ function saveBookmark(e)
     var siteUrl = document.getElementById("siteURL").value;
     
     if(!siteName || !siteUrl){
-        alert("please fill the form");
-        return False; 
+        alert("please do fill the form");
+        //return False; 
+        return True; 
     }
 
     var bookmark = {
