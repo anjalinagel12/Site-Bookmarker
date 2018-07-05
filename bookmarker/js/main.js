@@ -27,7 +27,7 @@ function deleteBookmark(url)
      var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
      //console.log(bookmarks);
      var bookmarksResults= document.getElementById('bookmarksResults');
-     bookmarksResults.innerHTML =  'hello';
+     bookmarksResults.innerHTML =  ' ';
      for(var i=0;i<bookmarks.length;i++)
      {
          var name = bookmarks[i].name;
