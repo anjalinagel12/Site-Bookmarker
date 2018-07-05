@@ -27,7 +27,7 @@ function deleteBookmark(url)
      var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
      //console.log(bookmarks);
      var bookmarksResults= document.getElementById('bookmarksResults');
-     bookmarksResults.innerHTML =  '';
+     bookmarksResults.innerHTML =  'hello';
      for(var i=0;i<bookmarks.length;i++)
      {
          var name = bookmarks[i].name;
@@ -51,8 +51,7 @@ function saveBookmark(e)
     
     if(!siteName || !siteUrl){
         alert("please do fill the form");
-        //return False; 
-        return True; 
+        return False; 
     }
 
     var bookmark = {
